@@ -16,6 +16,15 @@ var reserve = document.getElementById("reserve");
 
 var shoppingCart = [];
 
+function printList() {
+
+//	bill.textContent = "hello";
+	for (var i = 0; i < shoppingCart.length; i++) {
+		bill.textContent += shoppingCart[i].name;
+	}
+}
+
+
 bomb.onclick = function() {
 	var bombs = {
 		name : "Bombs",
@@ -23,7 +32,6 @@ bomb.onclick = function() {
 	}
 	shoppingCart.push(bombs);
 	printList();
-
 }
 spazer.onclick = function() {
 	var spazers = {
@@ -32,7 +40,6 @@ spazer.onclick = function() {
 	}
 	shoppingCart.push(spazers);
 	printList();
-
 }
 
 wave.onclick = function() {
@@ -42,7 +49,6 @@ wave.onclick = function() {
 	}
 	shoppingCart.push(waves);
 	printList();
-
 }
 
 plasma.onclick = function() {
@@ -52,7 +58,6 @@ plasma.onclick = function() {
 	}
 	shoppingCart.push(plasmas);
 	printList();
-
 }
 
 highJump.onclick = function() {
@@ -62,7 +67,6 @@ highJump.onclick = function() {
 	}
 	shoppingCart.push(highJumps);
 	printList();
-
 }
 
 speed.onclick = function() {
@@ -72,7 +76,6 @@ speed.onclick = function() {
 	}
 	shoppingCart.push(speeds);
 	printList();
-
 }
 
 screw.onclick = function() {
@@ -82,7 +85,6 @@ screw.onclick = function() {
 	}
 	shoppingCart.push(screws);
 	printList();
-
 }
 
 springBall.onclick = function() {
@@ -92,7 +94,6 @@ springBall.onclick = function() {
 	}
 	shoppingCart.push(springBalls);
 	printList();
-
 }
 
 varia.onclick = function() {
@@ -102,7 +103,6 @@ varia.onclick = function() {
 	}
 	shoppingCart.push(varias);
 	printList();
-
 }
 
 gravity.onclick = function() {
@@ -112,7 +112,6 @@ gravity.onclick = function() {
 	}
 	shoppingCart.push(gravitys);
 	printList();
-
 }
 
 missile.onclick = function() {
@@ -122,7 +121,6 @@ missile.onclick = function() {
 	}
 	shoppingCart.push(missiles);
 	printList();
-
 }
 
 supers.onclick = function() {
@@ -132,7 +130,6 @@ supers.onclick = function() {
 	}
 	shoppingCart.push(superss);
 	printList();
-
 }
 powerBomb.onclick = function() {
 	var powerBombs = {
@@ -142,31 +139,22 @@ powerBomb.onclick = function() {
 	shoppingCart.push(powerBombs);
 	printList();
 
-}
-
-etank.onclick = function() {
-	var etanks = {
-		name : "Energy Tank",
-		price : 799.99,
+	etank.onclick = function() {
+		var etanks = {
+			name : "Energy Tank",
+			price : 799.99,
+		}
+		shoppingCart.push(etanks);
+		printList();
 	}
-	shoppingCart.push(etanks);
-	printList();
-}
 
-reserve.onclick = function() {
-	var reserves = {
-		name : "Reserve Tank",
-		price : 799.99,
-	}
-	shoppingCart.push(reserves);
-	printList();
-}
-
-function printList() {
-	
-	
-	bill.textContent = 
-	for (var i = 0; i < shoppingCart.length; i++) {
-		shoppingCart[0].name;
+	reserve.onclick = function() {
+		var reserves = {
+			name : "Reserve Tank",
+			price : 799.99,
+		}
+		shoppingCart.push(reserves);
+		printList();
 	}
 }
+
