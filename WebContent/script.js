@@ -19,9 +19,12 @@ var shoppingCart = [];
 function printList() {
 
 //	bill.textContent = "hello";
+	var wholeBill = "";
 	for (var i = 0; i < shoppingCart.length; i++) {
-		bill.textContent += shoppingCart[i].name;
+		wholeBill += shoppingCart[i].name + "\n";
 	}
+	bill.textContent = wholeBill;
+	
 }
 
 
