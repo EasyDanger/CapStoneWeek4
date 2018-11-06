@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+	font-family: "Yamaha EBM 8";
+}
+
+main {
+	padding-top: 50px;
+}
+
+main p {
+	line-height: 1em;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	
+}
+span{
+	text-align: right;
+}
+.listItems {
+	align: left;
+	display: inline-block;
+}
+button {
+	text-align: left;
+}
+
+.card {
+	margin: 30px;
+	padding: 20px 40px 40px;
+	max-width: 300px;
+	text-align: left;
+	background: #920000;
+	border-bottom: 4px solid #6c0000;
+	border-radius: 6px;
+	color: #00EC00;
+}
+
+.card:hover {
+	border-color: #470000;
+}
